@@ -231,6 +231,57 @@ a {
 .step p {
   font-size: 1rem;
 }
+/* Custom modifications */
+img[alt="undefined"] {
+  display: none;
+}
+
+img[alt*="SendPulse"] {
+  display: none;
+}
+
+/* Hide SendPulse logos and links */
+footer a[href*="sendpulse"] {
+  display: none;
+}
+
+/* Contact social icons using our custom images */
+.contact-social a[href*="telegram"] {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url('telegram-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.contact-social a[href*="whatsapp"] {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url('whatsapp-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+/* Adjust footer styling */
+footer {
+  background-color: #F5AFAF;
+  padding: 0.5rem;
+}
+
+/* Fix order buttons alignment */
+.order-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 
 /* Gallery section */
 .gallery {
