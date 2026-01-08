@@ -391,3 +391,42 @@ footer {
     flex: 1 1 100%;
   }
 }
+
+/* Custom modifications */
+img[alt="undefined"],
+img[alt*="SendPulse"] {
+  display: none;
+}
+footer a[href*="sendpulse"] {
+  display: none;
+}
+.contact-social a[href*="telegram"] {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('telegram-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.contact-social a[href*="whatsapp"] {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('whatsapp-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+footer {
+  background-color: #F5AFAF;
+  padding: 0.5rem;
+}
+.order-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
