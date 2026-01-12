@@ -429,4 +429,44 @@ footer {
   justify-content: center;
   gap: 1rem;
 }
+/* === FIX TEXT BREAKING (MOBILE SAFE) === */
+h1, h2, h3, p, .hero-text, .hero-content {
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  white-space: normal !important;
+  hyphens: none !important;
+}
+
+/* Якщо заголовок всередині flex */
+.hero,
+.hero-content {
+  display: block !important;
+}
+
+/* Обмеження ширини без ламання слів */
+.hero-content {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* === FIX MOBILE FONT SCALING === */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* === FIX IMAGES / ICONS === */
+.contact-social a {
+  background-image: none !important;
+  text-indent: 0 !important;
+  overflow: visible !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* === FOOTER ICONS SAFE SIZE === */
+.contact-social img {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
 
