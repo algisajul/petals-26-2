@@ -190,30 +190,17 @@ footer ul {
   }
 }
 /* === FOOTER SOCIAL ICONS FIX === */
-.footer-social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-  margin: 24px 0;
-}
+<div class="footer-social">
+  <a href="https://wa.me/380634311663" target="_blank" aria-label="WhatsApp">
+    <img src="whatsapp.png" alt="WhatsApp">
+  </a>
 
-.footer-social a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
+  <a href="https://t.me/Petalsdigital_bot" target="_blank" aria-label="Telegram">
+    <img src="telegram.png" alt="Telegram">
+  </a>
 
-.footer-social img {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.footer-social a:hover img {
-  transform: scale(1.1);
-  opacity: 0.85;
-}
+  <a href="https://www.tiktok.com/@artaiterapyst" target="_blank" aria-label="TikTok">
+    <img src="tiktok.png" alt="TikTok">
+  </a>
+</div>
 
