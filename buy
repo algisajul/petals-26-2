@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Пелюстки тебе — оплата</title>
+  <style>
+    body { font-family: 'Georgia', serif; margin: 0; padding: 0; background: linear-gradient(135deg, #f9e8e8, #e8f4f0); color: #333; line-height: 1.6; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    .hero { text-align: center; padding: 60px 20px; background: rgba(255,255,255,0.55); border-radius: 18px; }
+    .hero h1 { font-size: 2.6em; margin: 0; }
+    .hero p { font-size: 1.2em; margin: 14px 0; }
+    .btn { display: inline-block; background: #ff6b9d; color: white; padding: 14px 26px; text-decoration: none; border-radius: 50px; font-size: 1.05em; transition: transform 0.2s; }
+    .btn:hover { transform: scale(1.03); }
+    .btn.secondary { background: #5e4a6e; }
+    .section { padding: 40px 20px; margin-top: 18px; background: rgba(255,255,255,0.72); border-radius: 18px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+    .card { background: white; border-radius: 18px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); padding: 22px; }
+    .price { font-size: 2em; margin: 8px 0; }
+    .muted { opacity: 0.85; }
+    .small { font-size: 0.95em; }
+    .divider { height: 1px; background: rgba(0,0,0,0.08); margin: 18px 0; }
+    ul { margin: 10px 0 0 18px; }
+    code.inline { background: rgba(0,0,0,0.05); padding: 2px 6px; border-radius: 6px; }
+    @media (max-width: 768px) { .hero h1 { font-size: 2em; } }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <h1>Пелюстки тобі</h1>
+      <p class="muted">Оплата та отримання цифрового продукту книги (PDF)</p>
+      <p> Самопізнання та емоційна підтрмка. М’які історії, афірмації, запитання й мікропрактики для емоційної підтримки — без тиску і поспіху.</p>
+
+      <a href="#pay" class="btn">Оплатити зараз</a>
+      <a href="#terms" class="btn secondary" style="margin-left:10px;">Умови</a>
+    </section>
+
+    <!-- ПРОДУКТ -->
+    <section class="section" id="product">
+      <h2>Що ви отримуєте</h2>
+      <p class="muted">Опис послуги (цифровий продукт):</p>
+      <div class="card">
+        <p><strong>Книга “30-денний набір «Пелюстки»”</strong> у форматі PDF-файлу, що включає добірку психологічних історій, афірмацій, запитань і мікропрактик для емоційної підтримки.</p>
+        <p class="small muted">Формат: PDF (цифровий продукт)</p>
+      </div>
+    </section>
+
+    <!-- ОПЛАТА -->
+    <section class="section" id="pay">
+      <h2>Оплата</h2>
+
+      <div class="grid">
+        <!-- LIQPAY -->
+        <div class="card">
+          <h3>1) Оплата через LiqPay (рекомендовано)</h3>
+          <p class="price"><strong>300 грн</strong></p>
+          <p class="muted small">Разовий платіж. Після оплати — отримання PDF.</p>
+
+          <!--  -->
+          <a class="btn" href="PASTE_LIQPAY_PAYMENT_LINK_HERE" target="_blank" rel="noopener">
+            Оплатити через LiqPay
+          </a>
+
+          <div class="divider"></div>
+          <p class="small muted">
+            .
+          </p>
+        </div>
+
+        <!-- РЕКВІЗИТИ -->
+        <div class="card">
+          <h3>2) Оплата за реквізитами (IBAN)</h3>
+          <p class="muted small">Призначення платежу: <strong>Оплата за інформаційні послуги 300 грн</strong></p>
+
+          <p class="small">
+            <strong>Отримувач:</strong> ФОП Явтушенко Юлія Валеріївна<br/>
+            <strong>IBAN:</strong> <code class="inline">UA343220010000026001360017953</code><br/>
+            <strong>ІПН/ЄДРПОУ:</strong> 2989712940<br/>
+            <strong>Банк:</strong> АТ “УНІВЕРСАЛ БАНК”<br/>
+            <strong>МФО:</strong> 322001<br/>
+            <strong>ЄДРПОУ Банку:</strong> 21133352
+          </p>
+
+          <div class="divider"></div>
+          <p class="small muted">
+            Після оплати за реквізитами надішли, будь ласка, підтвердження на email (petalsdigitalcontact@gmail.com) — і я надам доступ.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОТРИМАННЯ -->
+    <section class="section" id="delivery">
+      <h2>Як ви отримаєте матеріали</h2>
+      <div class="card">
+        <p><strong>Умови надання:</strong> після підтвердження оплати покупець отримає доступ до матеріалів через email або посилання на Google Drive протягом 24 годин.
+          При купівлі через Telegram-бот — посилання надсилається автоматично після підтвердження.</p>
+        <p class="small muted">
+          
+        </p>
+      </div>
+    </section>
+
+    <!-- УМОВИ / ПОВЕРНЕННЯ -->
+    <section class="section" id="terms">
+      <h2>Умови та повернення</h2>
+
+      <div class="card">
+        <h3>Умови повернення</h3>
+        <p>
+          Оскільки послуга є цифровим продуктом, який вважається наданим з моменту передачі доступу до PDF-файлу,
+          повернення коштів не передбачене.
+          У разі технічних проблем із отриманням — зверніться за контактами нижче.
+        </p>
+
+        <div class="divider"></div>
+
+        <h3>Контакти для підтримки</h3>
+        <p class="small">
+          <strong>Телефон:</strong> +38 (097) 947-74-31<br/>
+          <strong>Email:</strong> petalsdigitalcontact@gmail.com
+        </p>
+      </div>
+    </section>
+
+    <!-- ІНФОРМАЦІЯ ПРО ПРОДАВЦЯ -->
+    <section class="section" id="seller">
+  <h2>Інформація про продавця</h2>
+  <div class="card small">
+    <p><strong>Найменування отримувача оплати:</strong> ФОП Явтушенко Юлія Валеріївна</p>
+    <p><strong>Адреса для листування:</strong> вул.Мудрака 25, м. Київ, Україна</p>
+    <p><strong>Контакти:</strong> +38 (097) 947-74-31, petalsdigitalcontact@gmail.com </p>
+  </div>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer style="text-align:center; padding: 22px; color:#333;">
+      <p class="small muted">
+        © 2026 «Пелюстки тебе». <a href="#top" style="color:#5e4a6e;">Вгору</a>
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>
