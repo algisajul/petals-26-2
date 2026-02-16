@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Пелюстки тебе — придбати книгу</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg1: rgb(248,241,242);
+      --bg2: rgb(234,247,254);
+      --accent: rgb(245,130,178);
+      --accent-hover: #c497b2;
+      --text: #2b2b2b;
+      --card: rgba(255,255,255,0.78);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 30px;
+      background: var(--card);
+      border-radius: 28px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .hero img {
+      max-width: 220px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 46px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 720px;
+      margin: 0 auto 26px;
+      opacity: 0.9;
+    }
+
+    .price {
+      font-size: 32px;
+      font-weight: 600;
+      margin: 18px 0 26px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 36px;
+      background: var(--accent);
+      color: white;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      transition: all 0.15s ease;
+      box-shadow: 0 8px 20px rgba(245,130,178,0.45);
+    }
+
+    .btn:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(196,151,178,0.6);
+    }
+
+    .section {
+      margin-top: 42px;
+      padding: 34px;
+      background: var(--card);
+      border-radius: 26px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 28px;
+      font-size: 32px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .muted {
+      opacity: 0.75;
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      opacity: 0.6;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="hero">
+      <img src="cover-ua.png" alt="Обкладинка книги Пелюстки тебе"/>
+      <h1>«Пелюстки тебе»</h1>
+      <p>
+        Метафоричні історії та практики для самопізнання й емоційної підтримки.
+        Книга для тих, хто втомився бути сильним і хоче м’яко побути з собою.
+      </p>
+      <div class="price">300 грн</div>
+
+      <!-- 🔗 ЗАМІНИ ЛІНК НА СВІЙ РЕАЛЬНИЙ LIQPAY / WAYFORPAY -->
+    <a class="btn" href="https://www.liqpay.ua/uk/checkout/sandbox_i54081446011" target="_blank">
+
+        Придбати книгу
+      </a>
+
+      <p class="muted" style="margin-top:14px;">
+        Оплата відбувається на захищеній сторінці платіжного сервісу
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Що ти отримаєш</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>📖 Електронна книга</h3>
+          <p class="muted">PDF-версія книги українською мовою</p>
+        </div>
+        <div class="card">
+          <h3>🧠 Метафоричні історії</h3>
+          <p class="muted">Тексти для емоційної підтримки та внутрішніх роздумів</p>
+        </div>
+        <div class="card">
+          <h3>🌿 Практики</h3>
+          <p class="muted">М’які вправи для контакту з собою</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Для кого ця книга</h2>
+      <div class="grid">
+        <div class="card">
+          <p class="muted">
+            Для тих, хто багато дає іншим і забуває про себе.
+          </p>
+        </div>
+        <div class="card">
+          <p class="muted">
+            Для людей у стані втоми, перевантаження, внутрішньої порожнечі.
+          </p>
+        </div>
+        <div class="card">
+          <p class="muted">
+            Для тих, хто шукає теплу, недирективну форму самопідтримки.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      © Algisa Bloom · petals.digital
+    </footer>
+
+  </div>
+</body>
+</html>
